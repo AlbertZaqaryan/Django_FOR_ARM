@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home page</h1>
+    <a href="{% url 'about' %}"><button>About</button></a>
+    <hr>
+    {% for i in car_list %}
+        <h4>{{ i.name }}</h4>
+        <img src="{{ i.img.url }}" width="400px" alt="">
+        <p>{{ i.price }}</p>
+    {% endfor %}
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a href="https://www.youtube.com/"><button>Youtube</button></a>
+    <div>
+        <img src="https://editorial.pxcrush.net/carsales/general/editorial/bmw-m3-02.jpg?width=1024&height=683" width="200px" alt="">
+    </div>
+    <ul>
+        <li>Hello</li>
+        <li>User</li>
+        <li>Page</li>
+    </ul>
+</body>
+</html>
